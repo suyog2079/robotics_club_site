@@ -50,9 +50,9 @@ about_page_socials = true
 [social.links]
   twitter = "username"
   github = "Robotics-Club-Pulchowk"
-  stack_overflow = "userid/username" # include user id
+  #stack_overflow = "userid/username" # include user id
   email = "user@example.com"
-  # linkedin = "username" # Comment out to disable
+  linkedin = "robotics-club-ioe-pulchowk-campus/mycompany/" # Comment out to disable
   # mastodon_server = "example.social" # include subdomains if relevant, scheme not needed (defaults to https)
   # mastodon_user = "username" # don't include preceding @
 

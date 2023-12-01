@@ -12,3 +12,5 @@ projects_section_heading: My Projects
 
 {{< recent-posts 3 >}}
 {{< projects 1 >}}
+
+{{< robocon 1 >}}
