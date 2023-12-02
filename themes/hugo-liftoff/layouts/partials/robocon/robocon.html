@@ -1,0 +1,38 @@
+<div class="container">
+  <section class="page-header">
+    <h1 class="page-header-title">
+      {{- if eq .Kind "term" -}}
+        {{- .Title }} ROBOCON
+      {{- else -}}
+        {{- .Title -}}
+      {{- end -}}
+    </h1>
+    <p class="page-header-desc">
+      {{- with .Params.Summary -}}
+        {{- . -}}
+      {{- else -}}
+        {{- with .Description -}}
+          {{- . -}}
+        {{- else -}}
+          {{- if eq .Kind "term" -}}
+            {{- .Title }} robocon
+          {{- else -}}
+            {{- .Title -}}
+          {{- end }}
+            We have participated.
+        {{- end -}}
+      {{- end -}}
+    </p>
+  </section>
+  <section>
+    {{ with .RegularPagesRecursive }}
+      <div class="project-list">
+        {{ range . }}
+          {{ partial "robocon/robocon-entry.html" . }}
+        {{ end }}
+      </div>
+    {{ else }}
+      {{ partial "general/fallback-text.html" . }}
+    {{ end }}
+  </section>
+</div>

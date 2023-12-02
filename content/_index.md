@@ -1,7 +1,7 @@
 ---
 title: Robotics Club Pulchowk
-subtitle: Innovation in Nepal
-seo_title: Robotics | Automation
+subtitle: Institute of Engineering, Nepal
+seo_title: Robotics Club
 
 primary_cta_page: "about"
 secondary_cta_page: "projects"
@@ -10,7 +10,7 @@ posts_section_heading: Recent Posts
 projects_section_heading: My Projects
 ---
 
-{{< recent-posts 3 >}}
-{{< projects 1 >}}
+{{< robocon 2 >}}
+{{< recent-posts 2 >}}
+{{< projects 2 >}}
 
-{{< robocon 1 >}}

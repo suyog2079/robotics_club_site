@@ -13,9 +13,9 @@
     weight = 1
 
 [[main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
     parent = "work"
     weight = 2
 
@@ -63,15 +63,23 @@
     weight = 7
 
 [[main]]
-    identifier = "series"
-    name = "Series"
-    url = "/series/"
-    parent = "explore"
+    # Top-level menu entry
+    identifier = "reach us"
+    name = "Reach Us"
+    url = "/about/"
     weight = 8
 
 [[main]]
-    identifier = "project-type"
-    name = "Project Types"
-    url = "/project-types/"
-    parent = "explore"
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    parent = "reach us"
     weight = 9
+
+[[main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    parent = "reach us"
+    weight = 10
+
