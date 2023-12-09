@@ -1,0 +1,5 @@
+{{ define "main" }}
+{{ range readDir "/static/images" }}
+<img style="max-width:70%;" src="/images/{{.Name}}" alt="">
+{{ end }}
+{{end}}

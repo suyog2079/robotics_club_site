@@ -23,7 +23,7 @@ techstack:
     - HTML/CSS
     - JavaScript
     - Netlify
-live_url: https://hugo-liftoff.netlify.app
+live_url: 
 source_url: https://github.com/wjh18/hugo-liftoff
 ---
 

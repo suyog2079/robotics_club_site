@@ -24,14 +24,15 @@
   right: 20px;
 
   @include respond-to('m-large') {
-    position:relative;
+    position: relative;
     top: unset;
     right: unset;
   }
-  
+
 }
 
-.switch-input, .switch-label {
+.switch-input,
+.switch-label {
   position: absolute;
   left: 0;
   top: 0;
@@ -46,26 +47,26 @@
   pointer-events: none;
 }
 
-.switch-input:checked + .switch-label {
+.switch-input:checked+.switch-label {
   background-color: hsl(228, 74%, 61%);
   background-color: var(--color-primary);
 }
 
-.switch-input:checked + .switch-label + .switch-marker {
+.switch-input:checked+.switch-label+.switch-marker {
   left: calc(100% - 29px);
   left: calc(100% - var(--switch-height) + var(--switch-padding));
 }
 
-.switch-input:focus + .switch-label,
-.switch-input:active + .switch-label {
+.switch-input:focus+.switch-label,
+.switch-input:active+.switch-label {
   --color-shadow: hsla(228, 74%, 61%, 0.2);
   box-shadow: undefined;
   box-shadow: 0 0 0 3px var(--color-shadow);
 }
 
-.switch-input:focus + .switch-label,
-.switch-input:active + .switch-label {
-  box-shadow: 0 0 0 3px hsla(228, 74%, 61%, 0.2);
+.switch-input:focus+.switch-label,
+.switch-input:active+.switch-label {
+  box-shadow: 0 0 0 3px hsla(228, 7%, 61%, 0.2);
   box-shadow: 0 0 0 3px var(--color-shadow);
 }
 
@@ -74,9 +75,9 @@
   height: 100%;
   color: transparent;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: hsl(240, 1%, 83%);
   background-color: var(--color-contrast-low);
   border-radius: inherit;
@@ -87,7 +88,7 @@
 
 .switch-marker {
   position: relative;
-  background-color: hsl(0, 0%, 100%);
+  // background-color: hsl(0, 0%, 100%);
   background-color: var(--color-contrast-high);
   width: 20px;
   width: calc(var(--switch-height) - var(--switch-padding)*2);
@@ -96,10 +97,33 @@
   border-radius: 50%;
   z-index: 2;
   pointer-events: none;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   left: 3px;
   left: var(--switch-padding);
   transition: left 0.2s;
   transition: left var(--switch-animation-duration);
   will-change: left;
+
+}
+
+.switch-marker-icon_light {
+  position: absolute;
+  opacity: var(--icon-opacity_light);
+  width: 20px;
+  width: calc(var(--switch-height) - var(--switch-padding)*2);
+  height: 20px;
+  height: calc(var(--switch-height) - var(--switch-padding)*2);
+  transition: opacity 0.2s;
+  transition: opacity var(--switch-animation-duration);
+}
+
+.switch-marker-icon_dark {
+  position: absolute;
+  opacity: var(--icon-opacity_dark);
+  width: 20px;
+  width: calc(var(--switch-height) - var(--switch-padding)*2);
+  height: 20px;
+  height: calc(var(--switch-height) - var(--switch-padding)*2);
+  transition: opacity 0.2s;
+  transition: opacity var(--switch-animation-duration);
 }

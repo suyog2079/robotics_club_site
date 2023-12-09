@@ -6,11 +6,12 @@ seo_title: Robotics Club
 primary_cta_page: "about"
 secondary_cta_page: "projects"
 
+robocon_section_heading: ROBOCON
 posts_section_heading: Recent Posts
 projects_section_heading: My Projects
+gallery_section_heading: Gallery
 ---
 
 {{< robocon 2 >}}
 {{< recent-posts 2 >}}
 {{< projects 2 >}}
-

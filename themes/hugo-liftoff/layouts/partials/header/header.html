@@ -9,28 +9,36 @@
         <span class="menu-link">{{ .Name }}<span class="drop-icon">▾</span></span>
         <ul class="sub-menu">
           {{ range .Children }}
-            <li class="menu-item">
-              <a href="{{ .URL }}" class="menu-link">{{ .Name }}</a>                  
-            </li>
+          <li class="menu-item">
+            <a href="{{ .URL }}" class="menu-link">{{ .Name }}</a>
+          </li>
           {{ end }}
         </ul>
       </li>
       {{ else }}
-        <li class="menu-item">
-          <a href="{{ .URL }}" class="menu-link">{{ .Name }}</a>
-        </li>
+      <li class="menu-item">
+        <a href="{{ .URL }}" class="menu-link">{{ .Name }}</a>
+      </li>
       {{ end }}
       {{ end }}
       <li class="menu-item--align">
         <div class="switch">
           <input class="switch-input" type="checkbox" id="themeSwitch">
           <label aria-hidden="true" class="switch-label" for="themeSwitch">On</label>
-          <div aria-hidden="true" class="switch-marker"></div>
+          <div aria-hidden="true" class="switch-marker">
+            <img class="switch-marker-icon_dark" src="/icons/dark-theme-icon.svg">
+            <img class="switch-marker-icon_light" src="/icons/light-theme-icon.svg">
+          </div>
         </div>
       </li>
     </ul>
     <span class="nav-toggle" id="js-navbar-toggle">
-      <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="30" height="30" fill="var(--color-contrast-high)"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="30" height="30"
+        fill="var(--color-contrast-high)">
+        <rect y="11" width="24" height="2" rx="1" />
+        <rect y="4" width="24" height="2" rx="1" />
+        <rect y="18" width="24" height="2" rx="1" />
+      </svg>
     </span>
   </nav>
 </header>

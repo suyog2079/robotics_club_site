@@ -1,4 +1,5 @@
-:root, [data-theme="default"] {
+:root,
+[data-theme="default"] {
   --color-primary: rgb(18, 120, 175);
   --color-inline-code: hsl(0, 81%, 35%);
   /* color contrasts */
@@ -17,7 +18,9 @@
   --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
   --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
   --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
-  --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem); }
+  --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  --icon-opacity_light: 1;
+  --icon-opacity_dark: 0; }
 
 [data-theme] {
   background-color: var(--color-bg);
@@ -35,7 +38,9 @@
   --color-contrast-medium-high: hsl(240, 1%, 65%);
   --color-contrast-high: hsl(0, 0%, 89%);
   --color-contrast-higher: white;
-  --color-text: var(--color-contrast-high); }
+  --color-text: var(--color-contrast-high);
+  --icon-opacity_light: 0;
+  --icon-opacity_dark: 1; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -790,7 +795,8 @@ body {
       position: relative;
       top: unset;
       right: unset; } }
-.switch-input, .switch-label {
+.switch-input,
+.switch-label {
   position: absolute;
   left: 0;
   top: 0; }
@@ -819,7 +825,7 @@ body {
 
 .switch-input:focus + .switch-label,
 .switch-input:active + .switch-label {
-  box-shadow: 0 0 0 3px rgba(82, 111, 229, 0.2);
+  box-shadow: 0 0 0 3px rgba(149, 151, 163, 0.2);
   box-shadow: 0 0 0 3px var(--color-shadow); }
 
 .switch-label {
@@ -839,7 +845,6 @@ body {
 
 .switch-marker {
   position: relative;
-  background-color: white;
   background-color: var(--color-contrast-high);
   width: 20px;
   width: calc(var(--switch-height) - var(--switch-padding)*2);
@@ -848,12 +853,31 @@ body {
   border-radius: 50%;
   z-index: 2;
   pointer-events: none;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   left: 3px;
   left: var(--switch-padding);
   transition: left 0.2s;
   transition: left var(--switch-animation-duration);
   will-change: left; }
+
+.switch-marker-icon_light {
+  position: absolute;
+  opacity: var(--icon-opacity_light);
+  width: 20px;
+  width: calc(var(--switch-height) - var(--switch-padding)*2);
+  height: 20px;
+  height: calc(var(--switch-height) - var(--switch-padding)*2);
+  transition: opacity 0.2s;
+  transition: opacity var(--switch-animation-duration); }
+
+.switch-marker-icon_dark {
+  position: absolute;
+  opacity: var(--icon-opacity_dark);
+  width: 20px;
+  width: calc(var(--switch-height) - var(--switch-padding)*2);
+  height: 20px;
+  height: calc(var(--switch-height) - var(--switch-padding)*2);
+  transition: opacity 0.2s;
+  transition: opacity var(--switch-animation-duration); }
 
 .social-links {
   width: 100%;

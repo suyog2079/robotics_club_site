@@ -5,7 +5,7 @@ description = "Minimal blog/portfolio theme with a focus on content creation and
 homepage = "https://github.com/wjh18/hugo-liftoff"
 demosite = "https://hugo-liftoff.netlify.app"
 tags = ["blog", "responsive", "minimal", "personal", "light", "dark", "portfolio", "dark-mode", "contact"]
-features = ["newsletter", "hero", "netlify", "seo", "schema", "rss", "comments", "google-tag-manager", "social-icons", "social-share", "subsections", "series", "submenu", "toc", "related-posts", "projects", "code-snippets", "custom-assets", "about-page"]
+features = ["newsletter", "hero", "netlify", "seo", "schema", "rss", "comments", "google-tag-manager", "social-icons", "social-share", "subsections", "series", "submenu", "toc", "related-posts", "projects","gallery", "code-snippets", "custom-assets", "about-page"]
 [author]
     name = "Will J. Holmes"
     homepage = "https://www.wjholmes.com"

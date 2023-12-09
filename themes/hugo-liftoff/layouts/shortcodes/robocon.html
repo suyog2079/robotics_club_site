@@ -1,13 +1,13 @@
 <section class="section">
   <div class="home-title-dropdown">
     <h2 class="home-section-title">
-      {{- with $.Page.Params.projects_section_heading -}}
-        {{- . -}}
+      {{- with $.Page.Params.robocon_section_heading -}}
+      {{- . -}}
       {{- else -}}
-        ROBOCON
+      ROBOCON
       {{- end -}}
     </h2>
-    <a class="see-more-projects" href="{{ "robocon/" | relURL }}">View all &raquo;</a>
+    <a class="see-more-projects" href="{{ `robocon/` | relURL }}">View all &raquo;</a>
   </div>
   {{ $num := .Get 0 }}
   {{ if not $num }}

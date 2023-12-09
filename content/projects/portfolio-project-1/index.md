@@ -33,6 +33,7 @@ This article offers a sample of basic Markdown syntax that can be used in Hugo c
 
 The following HTML `<h2>`—`<h6>` elements represent five levels of section headings. `<h2>` is the highest section level you should use in markdown while `<h6>` is the lowest. `<h1>` should be reserved for the page title.
 
+# H1
 ## H2
 ### H3
 #### H4
@@ -143,6 +144,8 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
   * Banana
 * Dairy
   * Milk
+    * Butter Milk
+    * Milk Powder
   * Cheese
 
 ## Other Elements — abbr, sub, sup, kbd, mark

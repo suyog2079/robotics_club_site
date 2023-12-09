@@ -82,3 +82,10 @@
     url = "/project-types/"
     parent = "explore"
     weight = 9
+
+[[main]]
+    identifier = "gallery"
+    name = "Gallery"
+    url = "/gallery/"
+    parent = "explore"
+    weight = 10
