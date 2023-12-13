@@ -5,7 +5,7 @@
 /**
  * Set up a decent box model on the root element
  */
- html {
+html {
   box-sizing: border-box;
 }
 
@@ -21,7 +21,8 @@
   box-sizing: inherit;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -30,14 +31,33 @@ body {
   to bottom of page if main content doesn't fill viewport vertically */
   display: flex;
   flex-direction: column;
+  height: 100%;
+
 }
 
-main {   
-  flex: 1 0 auto; 
+.tu_logo_bg {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .5;
+  background-image: url("/images/tribhuvan-university-tu-seeklogo.com.svg");
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50vw;
+  background-position-x: center;
+  background-position-y: center;
+  z-index: -12;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 footer {
-  flex-shrink: 0;    
+  flex-shrink: 0;
 }
 
 a {
@@ -75,12 +95,13 @@ h6 {
 }
 
 table {
-  border-collapse: collapse;    
+  border-collapse: collapse;
   display: block;
   overflow-x: auto;
 }
 
-td, th {
+td,
+th {
   border: 1px solid var(--color-contrast-medium-low);
   padding: 10px 20px;
   font-size: 0.9rem;
@@ -141,12 +162,13 @@ code {
 
 pre:not([style]) {
   // If no highlighting is applied already
-  background-color:#272822;
-  color:#f8f8f2;
+  background-color: #272822;
+  color: #f8f8f2;
   padding: 20px;
 }
 
-p > code, li > code {
+p>code,
+li>code {
   background-color: var(--color-contrast-lower);
   font-size: 1rem;
   color: var(--color-inline-code);
@@ -159,7 +181,8 @@ form {
   flex-wrap: wrap;
   row-gap: 10px;
 
-  input, textarea {
+  input,
+  textarea {
     border: 1px solid var(--color-contrast-medium-low);
     padding: 10px 12px;
     font-size: 1rem;
@@ -171,7 +194,7 @@ form {
       min-width: 250px;
     }
   }
-  
+
   button {
     cursor: pointer;
   }

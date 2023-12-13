@@ -15,3 +15,4 @@ gallery_section_heading: Gallery
 {{< robocon 2 >}}
 {{< recent-posts 2 >}}
 {{< projects 2 >}}
+{{< gallery >}}

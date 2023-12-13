@@ -364,14 +364,32 @@ html {
 *::after {
   box-sizing: inherit; }
 
-html, body {
+html,
+body {
   height: 100%; }
 
 body {
   /* Flex properties on body/main/footer are for floating footer
   to bottom of page if main content doesn't fill viewport vertically */
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  height: 100%; }
+
+.tu_logo_bg {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .5;
+  background-image: url("/images/tribhuvan-university-tu-seeklogo.com.svg");
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50vw;
+  background-position-x: center;
+  background-position-y: center;
+  z-index: -12; }
 
 main {
   flex: 1 0 auto; }
@@ -415,7 +433,8 @@ table {
   display: block;
   overflow-x: auto; }
 
-td, th {
+td,
+th {
   border: 1px solid var(--color-contrast-medium-low);
   padding: 10px 20px;
   font-size: 0.9rem;
@@ -467,7 +486,8 @@ pre:not([style]) {
   color: #f8f8f2;
   padding: 20px; }
 
-p > code, li > code {
+p > code,
+li > code {
   background-color: var(--color-contrast-lower);
   font-size: 1rem;
   color: var(--color-inline-code);
@@ -478,14 +498,16 @@ form {
   display: flex;
   flex-wrap: wrap;
   row-gap: 10px; }
-  form input, form textarea {
+  form input,
+  form textarea {
     border: 1px solid var(--color-contrast-medium-low);
     padding: 10px 12px;
     font-size: 1rem;
     background-color: var(--color-contrast-lower);
     color: var(--color-contrast-high); }
     @media (min-width: 576px) {
-      form input, form textarea {
+      form input,
+      form textarea {
         padding: 15px 12px;
         min-width: 250px; } }
   form button {
@@ -755,6 +777,16 @@ body {
       box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; }
       .sub-menu--active {
         display: none; } }
+.home_logo_light {
+  position: absolute;
+  opacity: var(--icon-opacity_light);
+  width: 80px; }
+
+.home_logo_dark {
+  position: absolute;
+  opacity: var(--icon-opacity_dark);
+  width: 80px; }
+
 .footer {
   background-color: var(--color-contrast-lower); }
 
@@ -1123,7 +1155,7 @@ body {
       padding: 80px 0; } }
 @media (min-width: 768px) {
   .hero-info {
-    flex: 0 1 65%; } }
+    flex: 0 1 60%; } }
 
 .hero-info .hero-title {
   font-weight: 900;
@@ -1136,14 +1168,25 @@ body {
   font-size: var(--font-size-base);
   line-height: calc(8px + 2ex); }
 
+@media (max-width: 767px) {
+  .hero-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; }
+  .hero-title {
+    text-align: center; } }
+
 .hero-owner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 20px; }
+  row-gap: 20px;
+  width: 100%; }
   @media (min-width: 768px) {
     .hero-owner {
-      flex: 0 1 35%; } }
+      flex: 0 1 40%;
+      align-self: center; } }
   .hero-owner .hero-avatar {
     max-width: 300px;
     width: 100%;
@@ -1386,5 +1429,40 @@ body {
 
 .project-list-meta {
   margin-top: 10px; }
+
+.gallery_container {
+  width: 100%;
+  padding: 2px 5px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.photos_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px; }
+
+.photos_container {
+  width: 100%;
+  border-radius: 15px;
+  height: inherit; }
+
+@media (min-width: 640px) {
+  .gallery_container {
+    max-width: 640px; } }
+
+@media (min-width: 768px) {
+  .gallery_container {
+    max-width: 768px; }
+  .photos_grid {
+    grid-template-columns: 1fr 1fr; } }
+
+@media (min-width: 1024px) {
+  .gallery_container {
+    max-width: 1024px;
+    padding: 2px 32px; } }
+
+@media (min-width: 1280px) {
+  .gallery_container {
+    max-width: 1280px; } }
 
 /*# sourceMappingURL=main.css.map */

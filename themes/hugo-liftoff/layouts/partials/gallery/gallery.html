@@ -1,3 +1,6 @@
 {{ range readDir "/static/images" }}
-<img style="max-width:70%;" src="/images/{{.Name}}" alt="">
+<div class="photo_container">
+  <img alt="gallery" class="photos_container" src="/images/{{.Name}}" />
+</div>
 {{ end }}
+

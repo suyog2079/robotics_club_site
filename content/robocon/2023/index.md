@@ -12,7 +12,7 @@ lastmod:
 expiryDate: 
 publishDate: 
 
-feature_image: web-design.jpg
+feature_image: photo_6280687211775112622_y.jpg
 feature_image_alt: Web design
 
 ---
