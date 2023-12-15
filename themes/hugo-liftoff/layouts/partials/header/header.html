@@ -1,12 +1,7 @@
 <header class="container">
   <nav class="main-nav" id="js-navbar">
-    <a class="logo" href="{{ .Site.BaseURL }}"><img alt="Home" src="icons/club_logo_light.svg" class="home_logo_light"
-        onerror="
-      this.src='/icons/club_logo_dark.svg'
-    ">
-      <img alt="Home" src="icons/club_logo_dark.svg" class="home_logo_dark" onerror="
-          this.src='/icons/club_logo_dark.svg'
-        "></a>
+    <a class="logo" href="{{ .Site.BaseURL }}"><img alt="Home" src="icons/club_logo_light.svg" class="home_logo_light">
+      <img alt="Home" src="icons/club_logo_dark.svg" class="home_logo_dark"></a>
     <ul class="menu" id="js-menu">
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
