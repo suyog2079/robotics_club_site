@@ -36,8 +36,8 @@
       {{ if eq .Site.Params.grayscale_avatar true }}
       {{ $image = $image | images.Filter (images.Grayscale) }}
       {{ end }}
-      <img class="hero-avatar" src="images/photo_6280687211775112622_y.jpg" width="{{- $image.Width -}}" height="{{- $image.Height -}}"
-        alt="Headshot or avatar belonging to the website owner" />
+      <img class="hero-avatar" src="https://drive.google.com/uc?export=view&id=1EH6CkWErvD40nmqWu_IgsuumcJkUgcxm" loading="lazy" width="{{- $image.Width -}}" height="{{- $image.Height -}}"
+        alt="A Group Photo" />
       {{ if eq .Site.Params.home_hero_socials true }}
       {{ partial "general/social-links.html" . }}
       {{ end }}

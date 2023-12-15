@@ -2,7 +2,10 @@
 {{ if eq .Site.Params.favicon true }}
 <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
-<link rel="icon" href="favicon/club_logo.png" type="image/x-icon" />
+<link rel="icon" class="favicon_elem" href="favicon/club_logo.png" type="image/png" onerror="
+console.log('hi');
+  this.src='/favicon/club_logo.png';
+">
 
 <link rel="manifest" href="/site.webmanifest">
 {{ end }}

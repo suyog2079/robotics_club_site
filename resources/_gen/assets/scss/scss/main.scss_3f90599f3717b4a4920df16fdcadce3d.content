@@ -688,7 +688,9 @@ body {
   width: 1px; }
 
 .section {
-  padding: 50px 0; }
+  position: relative;
+  padding: 50px 0;
+  top: 70px; }
 
 .main-nav {
   display: flex;
@@ -787,6 +789,10 @@ body {
   opacity: var(--icon-opacity_dark);
   width: 80px; }
 
+#js-menu {
+  position: relative;
+  top: 60px; }
+
 .footer {
   background-color: var(--color-contrast-lower); }
 
@@ -820,7 +826,7 @@ body {
   padding: 3px 0;
   padding: var(--switch-padding) 0;
   position: absolute;
-  top: 65px;
+  top: 21px;
   right: 20px; }
   @media (min-width: 900px) {
     .switch {
