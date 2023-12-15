@@ -1,5 +1,5 @@
 const Http = new XMLHttpRequest();
-const url='https://www.googleapis.com/drive/v3/drives';
+const url = 'https://www.googleapis.com/drive/v3/drives';
 Http.open("GET", url);
 Http.send();
 
@@ -16,7 +16,7 @@ export function galleryHtmlGen() {
   drivePhotosId.forEach(id => {
     galleryHtml += `
   <div class="photo_container">
-        <img alt="gallery" class="photos_container" src="https://drive.google.com/uc?export=view&id=${id}" />
+        <img alt="gallery" class="photos_container" src="https://i.postimg.cc/c194sx7z/photo-6298466705638275023-y.jpg" />
       </div>
   `
   });

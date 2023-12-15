@@ -205,17 +205,10 @@
   
 
 
-<link rel="icon" class="favicon_elem" href="favicon/club_logo.png" type="image/png" />
-<script>
-  const faviconElem = document.querySelector('.favicon_elem');
-  console.log(faviconElem);
-  faviconElem.setAttribute(href) = "/favicon/club_icon.png";
-  faviconElem.addEventListener("error", () => {
-    console.log("error");
-  })
-</script>
-
-
+<link rel="icon" class="favicon_elem" href="favicon/club_logo.png" type="image/png" onerror="
+console.log('hi');
+  this.src='/favicon/club_logo.png';
+">
 
 <link rel="manifest" href="/site.webmanifest">
 
@@ -225,7 +218,9 @@
     <header class="container">
   <nav class="main-nav" id="js-navbar">
     <a class="logo" href="https://www.example.com/"><img alt="Home" src="icons/club_logo_light.svg"
-        class="home_logo_light"><img alt="Home" src="icons/club_logo_dark.svg" class="home_logo_dark"></a>
+        class="home_logo_light"><img alt="Home" src="icons/club_logo_dark.svg" class="home_logo_dark" onerror="
+          this.src='/icons/club_logo_dark.svg'
+        "></a>
     <ul class="menu" id="js-menu">
       
       
@@ -298,8 +293,12 @@
           <input class="switch-input" type="checkbox" id="themeSwitch">
           <label aria-hidden="true" class="switch-label" for="themeSwitch">On</label>
           <div aria-hidden="true" class="switch-marker">
-            <img class="switch-marker-icon_dark" src="icons/dark-theme-icon.svg">
-            <img class="switch-marker-icon_light" src="icons/light-theme-icon.svg">
+            <img class="switch-marker-icon_dark" src="icons/dark-theme-icon.svg" onerror="
+              this.src='/icons/dark-theme-icon.svg'
+            ">
+            <img class="switch-marker-icon_light" src="icons/light-theme-icon.svg" onerror="
+            this.src='/icons/light-theme-icon.svg'
+          ">
           </div>
         </div>
       </li>
