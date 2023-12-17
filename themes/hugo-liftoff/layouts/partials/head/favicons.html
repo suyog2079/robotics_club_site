@@ -2,7 +2,7 @@
 {{ if eq .Site.Params.favicon true }}
 <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
-<link rel="icon" class="favicon_elem" href="favicon/club_logo.png" type="image/png" onerror="
+<link rel="icon" class="favicon_elem" href="{{.Site.BaseURL}}favicon/club_logo.png" type="image/png" onerror="
 console.log('hi');
   this.src='/favicon/club_logo.png';
 ">
