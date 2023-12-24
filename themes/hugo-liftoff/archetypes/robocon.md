@@ -6,8 +6,7 @@ description:
 slug: {{ .Name }}
 author: {{ .Site.Params.author }}
 
-draft: true
-date: {{ .Date }}
+date: 
 lastmod: 
 expiryDate: 
 publishDate: 
@@ -19,9 +18,4 @@ categories:
 tags: ROBOCON
 series:
 
-toc: true
-related: true
-social_share: true
-newsletter: true
-disable_comments: false
 ---

@@ -1,12 +1,11 @@
 ---
 title: ABU ROBOCON 2023, Cambodia
 seo_title: ABU ROBOCON 2023, Cambodia
-summary: Sustai, Kampuchea !! :D
-description: Portfolio Project 1 is my first portfolio project.
+summary:
+description:
 slug: portfolio-project-1
 author: John Doe
 
-draft: false
 date: 2019-02-20T03:52:30-05:00
 lastmod: 
 expiryDate: 
@@ -15,8 +14,13 @@ publishDate:
 feature_image: photo_6280687211775112622_y.jpg
 feature_image_alt: Web design
 
----
+categories:
+tags: ROBOCON
+series:
 
+
+---
+<!-- 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 
 ## Headings
@@ -149,4 +153,4 @@ X^n^ + Y<sup>n</sup> = Z<sup>n</sup>
 
 Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
 
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures. -->

@@ -53,11 +53,14 @@ about_page_socials = true
   #stack_overflow = "userid/username" # include user id
   email = "roboticsclub@pcampus.edu.np"
   linkedin = "robotics-club-ioe-pulchowk-campus/mycompany/" # Comment out to disable
+  facebook = "roboticsclubpulchowk"
+  instagram = "roboticsclub_pulchowk_campus/"
   # mastodon_server = "example.social" # include subdomains if relevant, scheme not needed (defaults to https)
   # mastodon_user = "username" # don't include preceding @
 
 # Enable or disable individual social share icons in posts
 [social.share]
+  instagram = true
   facebook = true
   linkedin = true
   twitter = true
