@@ -177,7 +177,7 @@
   
 
 
-<link rel="icon" class="favicon_elem" href="favicon/club_logo.png" type="image/png" onerror="
+<link rel="icon" class="favicon_elem" href="https://www.example.com/favicon/club_logo.png" type="image/png" onerror="
 console.log('hi');
   this.src='/favicon/club_logo.png';
 ">
@@ -187,10 +187,15 @@ console.log('hi');
   
 
 </head><body>
-    <header class="container">
+    <script>
+  let aboutContentHtml = '';
+</script>
+
+<header class="container">
   <nav class="main-nav" id="js-navbar">
-    <a class="logo" href="https://www.example.com/"><img alt="Home" src="icons/club_logo_light.svg" class="home_logo_light">
-      <img alt="Home" src="icons/club_logo_dark.svg" class="home_logo_dark"></a>
+    <a class="logo" href="https://www.example.com/"><img alt="Home" src="https://www.example.com/icons/club_logo_light.svg" class="home_logo_light">
+      <img alt="Home" src="https://www.example.com/icons/club_logo_dark.svg" class="home_logo_dark">
+    </a>
     <ul class="menu" id="js-menu">
       
       
@@ -205,6 +210,10 @@ console.log('hi');
           
           <li class="menu-item">
             <a href="/robocon/" class="menu-link">Robocon</a>
+          </li>
+          
+          <li class="menu-item">
+            <a href="/sponsor/" class="menu-link">Sponsor</a>
           </li>
           
         </ul>
@@ -263,8 +272,8 @@ console.log('hi');
           <input class="switch-input" type="checkbox" id="themeSwitch">
           <label aria-hidden="true" class="switch-label" for="themeSwitch">On</label>
           <div aria-hidden="true" class="switch-marker">
-            <img class="switch-marker-icon_dark" src="icons/dark-theme-icon.svg">
-            <img class="switch-marker-icon_light" src="icons/light-theme-icon.svg">
+            <img class="switch-marker-icon_dark" src="https://www.example.com/icons/dark-theme-icon.svg">
+            <img class="switch-marker-icon_light" src="https://www.example.com/icons/light-theme-icon.svg">
           </div>
         </div>
       </li>
@@ -332,15 +341,15 @@ console.log('hi');
     </main><footer>
   
   <div class="section footer">
-    <p class="footer-copyright">&copy; 2023 &middot; 
+    <p class="footer-copyright">&copy; 2023 &middot;
       <a href="https://www.example.com/">Home</a>
       
-        <span>&middot; Placeholder footer.</span>
+      <span>&middot; Placeholder footer.</span>
       
     </p>
     
-      <div class="footer-socials">
-        
+    <div class="footer-socials">
+      
 <div class="social-links">
   <ul class="social-icons">
     
@@ -381,10 +390,15 @@ console.log('hi');
   </ul>
 </div>
 
-      </div>
+    </div>
     
   </div>
 </footer>
+<script>
+  console.log(aboutContentHtml);
+  document.getElementById('single-grid-container').innerHTML = aboutContentHtml;
+  console.log(document.getElementById("single-grid-container"));
+</script>
 
   
 

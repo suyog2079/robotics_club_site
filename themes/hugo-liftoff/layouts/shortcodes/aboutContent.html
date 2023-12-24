@@ -1,0 +1,9 @@
+
+  <script>
+    if ('{{.Get "img_align"}}' === 'r') {
+      aboutContentHtml += "<div class='about-content-row'><p class='about-content-text'>{{.Get "text"}}</p><img class='about-content-img' src='{{.Site.BaseURL}}images/{{.Get "img_src"}}.jpg'></div>"
+    }
+    else {
+      aboutContentHtml += "<div class='about-content-row'><img class='about-content-img' src='{{.Site.BaseURL}}images/{{.Get "img_src"}}.jpg'><p class='about-content-text'>{{.Get "text"}}</p></div>"
+    }
+  </script>

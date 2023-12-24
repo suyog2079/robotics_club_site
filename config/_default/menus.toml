@@ -13,6 +13,13 @@
     weight = 12
 
 [[main]]
+    identifier = "sponsor"
+    name = "Sponsor"
+    url = "/sponsor/"
+    parent = "explore"
+    weight = 13
+
+[[main]]
     identifier = "projects"
     name = "Projects"
     url = "/projects/"

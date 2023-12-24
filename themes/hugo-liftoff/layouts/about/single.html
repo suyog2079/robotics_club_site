@@ -1,12 +1,6 @@
 {{ define "main" }}
-<div class="container">
-  <section class="page-header--c">
-    <h1 class="page-header-title">{{ .Title }}</h1>
-  </section>
-</div>
-<div class="about">
-  <article class="single-container markdown">
-    {{ .Content }}
-  </article>
-</div>
+<article class="single-container markdown">
+  {{ .Content }}
+</article>
+<div id="single-grid-container" class="aboutContentGrid markdown single-container"></div>
 {{ end }}

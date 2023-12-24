@@ -1159,20 +1159,21 @@ body {
   @media (min-width: 900px) {
     .hero {
       padding: 80px 0; } }
-@media (min-width: 768px) {
-  .hero-info {
-    flex: 0 1 60%; } }
-
-.hero-info .hero-title {
-  font-weight: 900;
-  margin-top: 0;
-  font-size: var(--font-size-xl);
-  line-height: calc(8px + 2ex); }
-
-.hero-info .hero-subtitle {
-  color: var(--color-contrast-medium-high);
-  font-size: var(--font-size-base);
-  line-height: calc(8px + 2ex); }
+.hero-info {
+  flex: 50%;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .hero-info {
+      flex: 0 1 50%; } }
+  .hero-info .hero-title {
+    font-weight: 900;
+    margin-top: 0;
+    font-size: var(--font-size-xl);
+    line-height: calc(8px + 2ex); }
+  .hero-info .hero-subtitle {
+    color: var(--color-contrast-medium-high);
+    font-size: var(--font-size-base);
+    line-height: calc(8px + 2ex); }
 
 @media (max-width: 767px) {
   .hero-info {
@@ -1185,16 +1186,17 @@ body {
 
 .hero-owner {
   display: flex;
+  flex: 50%;
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
   width: 100%; }
   @media (min-width: 768px) {
     .hero-owner {
-      flex: 0 1 40%;
+      flex: 0 1 50%;
       align-self: center; } }
   .hero-owner .hero-avatar {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
     height: auto;
     border-radius: 20px; }
@@ -1262,7 +1264,7 @@ body {
   margin-top: 20px; }
 
 .single-container {
-  max-width: 900px; }
+  max-width: 1100px; }
 
 .single-container-post {
   max-width: 900px; }
@@ -1470,5 +1472,31 @@ body {
 @media (min-width: 1280px) {
   .gallery_container {
     max-width: 1280px; } }
+
+#single-grid-container {
+  display: flex;
+  flex-direction: column; }
+
+.about-content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.about-content-text {
+  padding: 20px;
+  height: 100%;
+  flex: 2; }
+
+.about-content-img {
+  flex: 1;
+  margin: 20px;
+  height: 100%;
+  max-height: 250px;
+  border-radius: 20px; }
+
+@media (max-width: 900px) {
+  .about-content-row {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=main.css.map */
