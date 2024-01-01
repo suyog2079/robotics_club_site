@@ -27,6 +27,13 @@
     weight = 3
 
 [[main]]
+    identifier = "awards"
+    name = "Awards"
+    url = "/awards/"
+    parent = "explore"
+    weight =14
+
+[[main]]
     # Top-level menu entry
     identifier = "writing"
     name = "Writing"

@@ -1,0 +1,20 @@
+.sponsor_tile {
+  width: 300px;
+  position: relative;
+  background-color: var(--color-contrast-lower);
+  border-radius: 12px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsor_name{
+  font-size: xx-large;
+  padding: 5px;
+}
+
+.sponsor_tile img{
+  border-radius: 12px;
+  width: 100%;
+}

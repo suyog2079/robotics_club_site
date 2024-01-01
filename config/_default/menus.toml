@@ -20,6 +20,13 @@
     weight = 13
 
 [[main]]
+    identifier = "awards"
+    name = "Awards"
+    url = "/awards/"
+    parent = "explore"
+    weight = 14
+
+[[main]]
     identifier = "projects"
     name = "Projects"
     url = "/projects/"
@@ -32,20 +39,6 @@
     url = "/contact/"
     parent = "work"
     weight = 3
-
-[[main]]
-    # Top-level menu entry
-    identifier = "writing"
-    name = "Writing"
-    url = "/posts/"
-    weight = 4
-
-[[main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    parent = "writing"
-    weight = 4
 
 
 [[main]]

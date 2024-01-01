@@ -1,8 +1,9 @@
-<script>
-  let aboutContentHtml = '';
-</script>
-
 <header class="container">
+  <script>
+    let aboutContentHtml = '';
+  </script>
+
+
   <nav class="main-nav" id="js-navbar">
     <a class="logo" href="{{ .Site.BaseURL }}">{{ $images := $.Resources.ByType "image" -}}
       <img alt="Home" src="{{.Site.BaseURL}}icons/club_logo_light.svg" class="home_logo_light">
@@ -31,7 +32,7 @@
       <li class="menu-item--align">
         <div class="switch">
           <input class="switch-input" type="checkbox" id="themeSwitch">
-          <label aria-hidden="true" class="switch-label" for="themeSwitch">On</label>
+          <label aria-hidden="true" class="switch-label" for="themeSwitch">Off</label>
           <div aria-hidden="true" class="switch-marker">
             <img class="switch-marker-icon_dark" src="{{.Site.BaseURL}}icons/dark-theme-icon.svg">
             <img class="switch-marker-icon_light" src="{{.Site.BaseURL}}icons/light-theme-icon.svg">

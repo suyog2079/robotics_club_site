@@ -717,7 +717,8 @@ body {
   line-height: calc(8px + 2ex);
   font-weight: 700;
   text-decoration: none;
-  width: fit-content; }
+  width: fit-content;
+  left: 20px; }
   .logo:hover {
     text-decoration: none; }
 
@@ -1498,5 +1499,27 @@ body {
 @media (max-width: 900px) {
   .about-content-row {
     flex-direction: column; } }
+
+.awards-content-img {
+  max-height: 400px;
+  border-radius: 15px; }
+
+.sponsor_tile {
+  width: 300px;
+  position: relative;
+  background-color: var(--color-contrast-lower);
+  border-radius: 12px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.sponsor_name {
+  font-size: xx-large;
+  padding: 5px; }
+
+.sponsor_tile img {
+  border-radius: 12px;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
