@@ -1,6 +1,6 @@
 ---
-title: ABU ROBOCON 2022, INDIA
-seo_title: ABU ROBOCON 2022, INDIA
+title: ABU ROBOCON 2022, Delhi, INDIA
+seo_title: ABU ROBOCON 2022, Delhi, INDIA
 summary: 
 description: 
 slug: 2022
@@ -19,3 +19,4 @@ tags: ROBOCON
 series:
 
 ---
+## this is the robocon 2022 page

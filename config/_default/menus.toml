@@ -49,13 +49,6 @@
     weight = 6
 
 [[main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories/"
-    parent = "explore"
-    weight = 6
-
-[[main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
